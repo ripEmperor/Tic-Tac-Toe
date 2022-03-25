@@ -1,9 +1,29 @@
 .container {
     display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
 }
 
 .spot {
     border: solid 1px red;
+    font-size: 50px;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.winner {
+    padding-top: 10px;
+}
+
+#restartGame {
+    width:60px;
+    height:20px;
+    margin-top: 5px;
 }
