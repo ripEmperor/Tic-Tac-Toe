@@ -109,10 +109,8 @@ const gameBoard = (() => {
 
             if (!(playerCache[playerCache.length-1] == undefined)) {
                 if (playerCache[playerCache.length-1] == 'x') {
-                    console.log('test')
                     marker = 'o'
                 } else {
-                    console.log('test2')
                     marker = 'x'
                 }
             } else if (Math.random() < 0.5) {
@@ -133,6 +131,11 @@ const gameBoard = (() => {
             visualizeBoard()
             gameLogic()
 
+            if (marker == 'x') {
+                document.querySelector('.starter').innerHTML = "current: " + 'o';
+            } else {
+                document.querySelector('.starter').innerHTML = "current: " + 'x';
+            }
         }
     }
 
